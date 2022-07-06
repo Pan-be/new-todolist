@@ -4,8 +4,59 @@
 	padding: 0;
 }
 
+:root {
+	--deep-dark: rgb(26, 26, 26);
+	--light-dark: rgb(79, 82, 72);
+	--light-blue: rgb(0, 132, 255);
+	--dark-blue: rgb(2, 84, 161);
+	--light: rgb(245, 245, 245);
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	display: flex;
 	justify-content: center;
+	margin-top: 120px;
+	background-color: var(--light);
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: var(--light);
+	text-transform: uppercase;
+}
+
+.todo {
+	width: 800px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
+	border-radius: 5px;
+}
+
+header {
+	padding: 40px;
+	border-radius: 5px 5px 0 0;
+	background-image: linear-gradient(340deg, #045de9 0%, #09c6f9 100%);
+}
+
+.todo-input {
+	width: 80%;
+	padding: 10px 20px;
+	margin-right: 20px;
+	border: none;
+	border-radius: 5px;
+	color: var(--light-dark);
+	background-color: var(--light);
+}
+
+.alert-info {
+	margin-top: 20px;
+	color: var(--dark-blue);
+}
+
+.add-btn {
+	padding: 10px 22px;
+	border: none;
+	border-radius: 5px;
 }
